@@ -1,13 +1,18 @@
 # Real-Time Crypto Price Prediction System
 
+![Architecture](assets/overall_architecture.png)
+
 ## Project Overview
 A production-ready machine learning and LLM system that predicts cryptocurrency price movements in real-time using market data streams. The system processes live trade data to generate technical indicators and leverages them for short-term price predictions. 
 ## Technical Architecture
 
 ### Key Components
 - **Feature Pipeline**: Real-time processing of trade data into OHLC candles and technical indicators using stateful stream processing
+![Feature Pipeline](assets/real_time_feature_pipeline.png)
 - **Training Pipeline**: Automated model training with experiment tracking and model registry integration
+![Training Pipeline](assets/training_pipeline.png)
 - **Inference Pipeline**: Real-time prediction serving via websocket API
+![Inference Pipeline](assets/inference_pipeline.png)
 - **Monitoring System**: Real-time model performance tracking and latency monitoring
 
 ### Technology Stack
