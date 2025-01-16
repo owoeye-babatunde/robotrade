@@ -43,13 +43,7 @@ A production-ready machine learning and LLM system that predicts cryptocurrency 
 ## Impact and Results
 - Successfully built an end-to-end ML system capable of real-time predictions
 - Demonstrated ability to handle high-throughput data streams with low latency
-- Implemented production-grade practices including monitoring, logging, and automated testing
-
-## Future Improvements
-- Integration with additional data sources for enhanced prediction accuracy
-- Implementation of A/B testing infrastructure for model deployment
-- Enhanced monitoring with automated alerting system
-- Kubernetes deployment for improved scalability
+- Implemented production-grade practices including monitoring, logging, and automated testin
 
 ## Development Practices
 - Git-flow workflow with pre-commit hooks for code quality
@@ -64,7 +58,18 @@ Detailed documentation available for key components:
 - Real-Time Inference System
 - Monitoring and Alerting Setup
 
-This project demonstrates expertise in:
+## Services
+Detailed documentation available for key services:
+- **Trades** - For trade data streaming from Kraken Websocket API
+- **Candles** - For trade data transformation to Open, High, Low, Close and Volume (OHLCV)using Quixstream to a Kafka topic
+- **Technical Indicator** - For technical indicator computing via Ta-Lib a technical indicator computing
+- **News** - For fetching and prprocessing News data for NLP tasks
+- **News Signal** - For processing and transformation of processed news data to trade signals and also push to Kafka topic
+- **To Feature Store** - For pushing streamed features from Kafka to the Hopsworks feature store
+- **Price Predictor** - For model training on the precessed OHLCV and News signal features from the feature store
+- **Prediction API** - For the trade prediction API built with Rust
+
+This project is truly exciting because I get to demonstrate my expertise in:
 - Distributed Systems Design
 - Real-Time Data Processing
 - ML Infrastructure Development
