@@ -14,8 +14,8 @@ jobs:
       - name: Get trade data
         run: |
           echo " " >> README.md
-          git config user.name "${{ secrets.GH_USERNAME }}"
-          git config user.email "${{ secrets.GH_EMAIL }}"
+          git config user.name "${{ owoeye-babatunde }}"
+          git config user.email "${{ babatundeowoeye7@gmail.com }}"
           git add .
           git commit -m "Trade data is here!"
           git push
