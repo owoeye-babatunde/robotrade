@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  schedule:
+    - cron: "30 8 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Get trade data
+        run: |
+          echo " " >> README.md
+          git config user.name "${{ secrets.GH_USERNAME }}"
+          git config user.email "${{ secrets.GH_EMAIL }}"
+          git add .
+          git commit -m "Trade data is here!"
+          git push
