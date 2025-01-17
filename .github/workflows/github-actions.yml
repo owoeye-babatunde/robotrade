@@ -15,7 +15,7 @@ jobs:
         run: |
           echo " " >> README.md
           git config user.name "${{ owoeye-babatunde }}"
-          git config user.email "${{ babatundeowoeye7@gmail.com }}"
+          git config user.email "${{ owoeyebabatunde01@gmail.com }}"
           git add .
           git commit -m "Trade data is here!"
           git push
